@@ -22,11 +22,11 @@ class Counter extends React.Component {
   render() {
     return (
       <div>
+        <FizzBuzzDisplay number={this.state.value} />
+        <NumberDisplay number={this.state.value} />
         <Button className="color" onClickFunction={this.increaseByOne}>
           +
         </Button>
-        <FizzBuzzDisplay number={this.state.value} />
-        <NumberDisplay number={this.state.value} />
         <Button onClickFunction={this.decreaseByOne}>-</Button>
       </div>
     );
